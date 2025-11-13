@@ -45,7 +45,7 @@ const Navbar = () => {
       </NavLink>
 
       <NavLink to="/models" className={getLinkClass}>
-        View Models
+        All Models
       </NavLink>
       <NavLink to="/add-model" className={getLinkClass}>
         Add Model
