@@ -11,6 +11,7 @@ const useSecureAxios = () => {
   // import user information from context
   const { user } = useAuth();
 
+  if (!user) return axiosInstance;
   // add authorization header to axios instance
   axiosInstance.interceptors.request.use((config) => {
     // add authorization token to header
